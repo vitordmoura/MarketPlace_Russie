@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Courier+Prime&family=Montserrat:ital,wght@0,100;1,100&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: var(--fonte-pricipal);
+    font-size: 14px;
+}
+
+
+body{
+box-sizing: border-box;
+
+
+}
+:root{
+
+--fonte-pricipal:"Montserrat", sans-serif;
+font-optical-sizing: auto; font-weight: 100;
+font-style: normal;
+
+--fonte-text: "Courier Prime", monospace;
+font-weight: 400; font-style:normal;
+
+--cor-primaria: #000000;
+--cor-icone: #f2f2f2;
+--cor-secundaria: #6b6b6b;
+--cor-terciaria: #0E0E0E;
+
+}
+
+header.cabecalho{
+background-color: var(--cor-primaria);
+padding: 1% 0% 0% 5%;
+
+}
+
+header.cabecalho section.cabecalho-suporte ul.cabecalho-suporte-contatos{
+display: flex;
+background-color: none;
+border: none;
+border-bottom-color: none;
+flex-direction: row-reverse;
+list-style-type: none;
+gap: 5px;
+padding: 0% 2% 0% 0%;
+
+
+}
+
+header.cabecalho nav.cabecalho_nav{
+display: flex;
+flex-direction: row;
+
+}
+
+header.cabecalho nav.cabecalho_nav div.container-menu img#icone-hamburguer{
+display: inline-block;
+position: relative;
+max-width: 30px;
+max-height:30px;
+width: auto;
+height: auto;
+}
+
+header.cabecalho nav.cabecalho_nav div.container-logo{
+display: flex;
+justify-content: center;
+}
+
+header.cabecalho nav.cabecalho_nav div.container-logo img#logo{
+display: flex;
+position: relative;
+max-width: 97px;
+max-height:97px;
+width: auto;
+height: auto;
+left: 34rem;
+}
+
+header.cabecalho nav.cabecalho_nav div.container-menu a#menu{
+color: var(--cor-icone);
+
+
+}
+
+header.cabecalho nav.cabecalho_usuario div.container-menu-usuario{
+display: flex;
+flex-direction: row-reverse;
+padding: 0% 2% 0% 0%;
+gap: 40px;
+
+
+}
+
+header.cabecalho nav.cabecalho_usuario div.container-menu-usuario img#icone-usuario{
+display: inline-block;
+position: relative;
+max-width: 30px;
+max-height:30px;
+width: auto;
+height: auto;
+}
+
+header.cabecalho div.container-menu-usuario a#conta{
+color: var(--cor-icone);
+
+}
+
+header.cabecalho nav.cabecalho_usuario div.container-menu-usuario img#icone-sacola{
+display: inline-block;
+position: relative;
+max-width: 35px;
+max-height:35px;
+width: auto;
+height: auto;
+}
+
+header.cabecalho div.container-menu-usuario a#sacola{
+color: var(--cor-icone);
+}
+
+header.cabecalho nav.cabecalho_nav div.caixa-de-pesquisa img#lupa-botao{
+
+height: 29px;
+width: 29px;
+
+}
+
+header.cabecalho nav.cabecalho_nav div.caixa-de-pesquisa {
+display: flex;
+position: absolute;
+left: 18%;
+background-color: var(--cor-terciaria);
+height: 30px;
+padding: 10px;
+border-radius: 40px;
+justify-content: space-between;
+
+
+}
+
+header.cabecalho nav.cabecalho_nav div.caixa-de-pesquisa input.caixa-texto{
+border: none;
+outline:none;
+background: none;
+font-family:"Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 800;
+font-style: normal;
+color: var(--cor-secundaria);
+font-size: 14px;
+
+}
+
+header.cabecalho nav.cabecalho_nav div.caixa-de-pesquisa .botao-pesquisar{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;  
+height: 40px;
+border-radius: 50%;
+background: var(--cor-terciaria);
+
+}
+
+div.caixa-de-pesquisa:hover{
+display: flex;
+color: var(--cor-secundaria);
+width: 300px;
+padding: 0 6 px;
+
+}
+
+input.caixa-texto:hover{
+width: 250px;
+
+}
+
+nav.cabecalho_usuario{
+display: flex;
+justify-content: flex-end;
+
+}
+
+#conta{
+display: flex;
+align-items: center;
+
+}
+
+#sacola{
+display: flex;
+align-items: center;
+    
+}
+
+#menu{
+display: flex;
+align-items: center;
+
+}
