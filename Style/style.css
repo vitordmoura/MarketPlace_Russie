@@ -7,10 +7,8 @@
     font-size: 14px;
 }
 
-
 body{
 box-sizing: border-box;
-
 
 }
 :root{
@@ -199,4 +197,40 @@ align-items: center;
 display: flex;
 align-items: center;
 
+}
+
+main.conteudo{
+background-color: var(--cor-terciaria);
+font-optical-sizing: auto;
+}
+
+main.conteudo section.conteudo-central div.midia{
+display: flex;
+flex-direction: reverse;
+
+}
+
+section .conteudo-texto{
+display: flex;
+
+}
+
+h1{
+display: flex;
+justify-content: space-around;
+align-items: flex-end;
+color: #f2f2f2;
+font-size: 36px;
+font-weight: 900;
+font-family: var(--fonte-pricipal);
+width: 910px;
+height: 312px;
+}
+
+#resumo-conteudo{
+display: flex;
+color: #f2f2f2;
+font-family: var(--fonte-text);
+justify-content:center;
+width: 910px;
 }
