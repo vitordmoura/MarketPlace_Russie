@@ -545,9 +545,7 @@ section.product-view div.all-info button{
         gap: 5rem;
     }
 
-    section.products div.product {
-        width: 50vw;
-    }
+   
 }
 
 @media (max-width: 400px){
