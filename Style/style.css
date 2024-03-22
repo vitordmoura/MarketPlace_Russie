@@ -31,9 +31,9 @@ font-weight: 400; font-style:normal;
 header.cabecalho{
 background-color: var(--cor-primaria);
 padding: 1rem;
-position: sticky;
+/* position: sticky;
 top: 0;
-z-index: 100;
+z-index: 100; */
 }
 
 header.cabecalho ul.cabecalho-suporte-contatos{
@@ -236,6 +236,11 @@ flex-direction: column;
 width: 100%;
 }
 
+.nostyle{
+    text-decoration: none;
+
+}
+
 section.products{
 display: flex;
 flex-wrap: wrap;
@@ -360,6 +365,94 @@ footer img{
     width: 100px;
 }
 
+
+section.product-view{
+    display: flex;
+    flex-direction:row;
+    gap: 1rem;
+    background-color: var(--cor-terciaria);
+    padding: 5rem;
+    color: var(--cor-icone);
+}
+
+section.product-view div.img-view{
+    width: 40%;
+}
+
+section.product-view div.all-info{
+    width: 60%;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8rem;
+    align-items: start;
+    height: 100%;
+}
+
+section.product-view div.all-info div.essential{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section.product-view div.all-info div.essential div.price-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+section.product-view div.all-info div.essential div.price-info p{
+    font-size: 2rem;
+}
+
+section.product-view div.all-info div.essential div.price-info p.min{
+    font-size: 1rem;
+    
+}
+
+section.product-view div.img-view img{
+    width: 100%;
+}
+
+
+section.product-view div.all-info div.size-options{
+    display: flex;
+    gap: 1rem;
+}
+
+section.product-view div.all-info p.desc{
+    font-size: 1.2rem;
+}
+
+section.product-view div.all-info div.size{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+section.product-view div.all-info div.size div.size-options{
+
+    display: flex;
+    gap: 2rem;
+}
+
+section.product-view div.all-info button{
+    background-color: var(--cor-icone);
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    width: 50%;
+    align-self: flex-end;
+}
+
+
 @media (max-width: 1400px){
     h1{
         font-size: 3rem;
@@ -383,7 +476,7 @@ footer img{
 
     div.centralize-logo{
        width: 100%;
-       padding: 0 2rem;
+       padding: 0 1rem;
     }
 }
 
@@ -399,7 +492,7 @@ footer img{
 
 
     section.products{
-        gap: 3rem;
+        
         padding: 5rem 0;
     }
 
@@ -418,6 +511,11 @@ footer img{
         font-size: 0.5rem;
         
     }
+
+    header.cabecalho{
+        padding: 1rem 0;
+    }
+
     header.cabecalho div.container-menu-usuario a span{
         display: none;
     }
@@ -425,4 +523,33 @@ footer img{
     header.cabecalho ul.cabecalho-suporte-contatos {
         display: none;
     }
+
+    header.cabecalho div.container-menu-usuario {
+        gap: 0;
+    }
+
+    header.cabecalho div.container-menu-usuario img#icone-sacola{
+        width: 30px;
+        
+    }
+    header.cabecalho div.container-menu-usuario img#icone-usuario {
+        width: 20px;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    section.products {
+        gap: 5rem;
+    }
+
+    section.products div.product {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 400px){
+
 }
