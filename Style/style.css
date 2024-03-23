@@ -31,9 +31,9 @@ font-weight: 400; font-style:normal;
 header.cabecalho{
 background-color: var(--cor-primaria);
 padding: 1rem;
-/* position: sticky;
+ position: sticky;
 top: 0;
-z-index: 100; */
+z-index: 100; 
 }
 
 header.cabecalho ul.cabecalho-suporte-contatos{
@@ -172,9 +172,6 @@ width: 20rem !important;
 
 }
 
-
-
-
 #conta{
 display: flex;
 align-items: center;
@@ -266,6 +263,8 @@ section.products div.product img{
     transition: all ease 0.5s;
     cursor: pointer;
     padding-bottom: 1rem;
+    width: auto;
+    height: 344px; ;
 }
 
 section.products div.product img:hover{
