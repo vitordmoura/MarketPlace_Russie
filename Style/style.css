@@ -56,6 +56,7 @@ align-items: center;
 
 header.cabecalho nav.cabecalho_nav div.container-menu img#icone-hamburguer{
     width: 50px;
+  ;
 }
 
 
@@ -65,6 +66,7 @@ header.cabecalho nav.cabecalho_nav div.container-logo img#logo{
 
 header.cabecalho nav.cabecalho_nav div.container-menu a#menu{
 color: var(--cor-icone);
+text-decoration: none
 
 
 }
@@ -452,15 +454,20 @@ section.product-view div.all-info button{
 }
 
 
-@media (max-width: 1400px){
+@media (max-width: 1440px){
     h1{
         font-size: 3rem;
     }
     #resumo-conteudo {
         font-size: 1.5rem;
-        
     }
 
+    section.products div.product p{
+        font-size: 8px;
+    }
+    section.products div.product p.price{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 1100px){
@@ -477,6 +484,19 @@ section.product-view div.all-info button{
        width: 100%;
        padding: 0 1rem;
     }
+
+    #resumo-conteudo{
+       font-size: 17px;
+    }
+
+    section.products div.product h2{
+        font-size: 16px;
+    }
+
+    section.products div.product p{
+        font-size: 6px;
+    }
+    
 }
 
 @media (max-width: 900px){
@@ -498,18 +518,24 @@ section.product-view div.all-info button{
     section.products div.product{
         width: 36vw;
     }
-    
+
+    section.products div.product img{
+        height:320px;
+        width: 249px;
+
+    }
 }
 
-@media (max-width: 600px){
+@media (max-width: 650px){
 
     h1{
         font-size: 1rem;
     }
     #resumo-conteudo {
-        font-size: 0.5rem;
-        
+        font-size: 0.5rem;  
     }
+    section.product-view
+        
 
     header.cabecalho{
         padding: 1rem 0;
@@ -544,9 +570,51 @@ section.product-view div.all-info button{
         gap: 5rem;
     }
 
+    section.product-view{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+    section.product-view div.all-info button{
+        align-self: center;
+    }
+    div.essential h1{
+        font-size: 30px
+    }
+
+  
+   
+
    
 }
 
 @media (max-width: 400px){
+    section.products div.product{
+        width: 64vw;
+    }
+    section.conteudo-central video{
+        width: 50%;  
+    }
+    #resumo-conteudo {
+        font-size: 0.6rem;
+    }
+    div#texto-conteudo h1{
+        font-size: 1rem;
+    }
+    section.products div.product p{
+        font-size: 8px;
+    }
+    #texto-conteudo{
+        gap: 1.5rem;
+    }
+    section.product-view{
+        padding: 20px
+    }
+    section.product-view div.all-info div.essential div.price-info p {
+        font-size: 20px;
+    }
+
 
 }
+    
+
