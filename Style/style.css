@@ -564,7 +564,7 @@ section.product-view div.all-info button{
     }
 
     footer p{
-        margin-top: 2rem;
+        
         font-size: 0.8rem;
         text-align: center;
     }
@@ -595,6 +595,9 @@ section.product-view div.all-info button{
         min-height: 1rem;
     }
 
+    footer img {
+        width: 70px;
+    }
    
 }
 
